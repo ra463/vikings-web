@@ -7,6 +7,7 @@
 
 body, html {
   height: 100%;
+  width: 80%;
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(135deg, #ede7f6, #e1f5fe);
   display: flex;
@@ -18,22 +19,20 @@ body, html {
 /* Form Container */
 .form-center {
   width: 100%;
-  max-width: 420px;
   padding: 20px;
 }
 
-/* Card Style */
 .form-card {
   background: #ffffff;
   border-radius: 12px;
-  padding: 40px 30px;
+  padding: 40px 40px; /* Slightly more horizontal padding */
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   border: 1px solid #e0e0e0;
   animation: slideUp 0.8s ease forwards;
   opacity: 0;
 }
 
-/* Title */
+
 .form-title {
   text-align: left;
   margin-bottom: 30px;
@@ -44,7 +43,6 @@ body, html {
   padding-left: 10px;
 }
 
-/* Input Group */
 .input-group {
   margin-bottom: 20px;
   opacity: 0;
@@ -81,7 +79,6 @@ body, html {
   outline: none;
 }
 
-/* Checkbox */
 .checkbox-container {
   display: flex;
   align-items: center;
@@ -99,7 +96,6 @@ body, html {
   accent-color: #7b1fa2;
 }
 
-/* Submit Button */
 .submit-btn {
   width: 100%;
   padding: 14px;
