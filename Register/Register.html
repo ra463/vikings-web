@@ -7,39 +7,44 @@
   <link rel="stylesheet" href="/Register/registration.css" />
 </head>
 <body>
-  <div class="container">
-<form class="registration-form" action="/Login/Login.html" method="GET">
-      <h2 class="form-title">Employee Registration</h2>
+  <div class="form-center">
+    <form class="form-card" onsubmit="redirectToLogin(event)">
+      <h2 class="form-title">Register</h2>
 
-      <div class="form-group">
-        <label for="employee-id" class="form-label">Employee ID</label>
-        <input type="text" id="employee-id" name="employeeId" class="form-input" required />
+      <div class="input-group">
+        <label for="emp-id" class="input-label">Employee ID</label>
+        <input type="text" id="emp-id" name="employeeId" class="input-field" required />
       </div>
 
-      <div class="form-group">
-        <label for="employee-name" class="form-label">Employee Name</label>
-        <input type="text" id="employee-name" name="employeeName" class="form-input" required />
+      <div class="input-group">
+        <label for="emp-name" class="input-label">Full Name</label>
+        <input type="text" id="emp-name" name="employeeName" class="input-field" required />
       </div>
 
-      <div class="form-group">
-        <label for="email" class="form-label">Email</label>
-        <input type="email" id="email" name="email" class="form-input" required />
+      <div class="input-group">
+        <label for="email" class="input-label">Email</label>
+        <input type="email" id="email" name="email" class="input-field" required />
       </div>
 
-      <div class="form-group">
-        <label for="place" class="form-label">Place</label>
-        <input type="text" id="place" name="place" class="form-input" required />
+      <div class="input-group">
+        <label for="place" class="input-label">Place</label>
+        <input type="text" id="place" name="place" class="input-field" required />
       </div>
 
-      <div class="form-group checkbox-group">
-        <input type="checkbox" id="terms" name="terms" class="form-checkbox" required />
-        <label for="terms" class="checkbox-label">I agree to the terms and conditions</label>
+      <div class="checkbox-container">
+        <input type="checkbox" id="terms" required />
+        <label for="terms">I agree to the terms & conditions</label>
       </div>
 
-      <div class="form-group">
-        <button type="submit" class="form-button">Submit</button>
-      </div>
+      <button type="submit" class="submit-btn">Register ➜</button>
     </form>
   </div>
+
+  <script>
+    function redirectToLogin(event) {
+      event.preventDefault();
+      window.location.href = "login.html";
+    }
+  </script>
 </body>
 </html>
