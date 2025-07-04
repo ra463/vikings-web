@@ -1,53 +1,88 @@
-.login-container {
-  width: 300px;
-  margin: 100px auto;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-h2 {
-  margin-bottom: 20px;
+ 
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+ 
+/* Container */
+.container {
+  background-color: #ffffff;
+  padding: 35px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  transition: transform 0.3s ease;
+}
+.container:hover {
+  transform: translateY(-3px);
+}
+ 
+/* Form Title */
+.form-title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #4a148c;
+  font-size: 24px;
+}
+ 
+/* Form Group */
+.form-group {
+  margin-bottom: 18px;
+}
+ 
+/* Labels */
+.form-label,
+.checkbox-label {
+  display: block;
+  font-size: small;
+  margin-bottom: 6px;
+  font-weight: 600;
   color: #333;
 }
-
-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #555;
-}
-
-input[type="text"],
-input[type="password"] {
+ 
+/* Inputs */
+.form-input {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
+  padding: 10px 12px;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border-color 0.3s;
 }
-
-input[type="text"]:focus,
-input[type="password"]:focus {
-  border-color: #007bff;
+.form-input:focus {
+  border-color: #7b1fa2;
   outline: none;
 }
 
-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+.forgot{
+  font-size: small;
+  color:lightskyblue;
+  text-align: center;
 }
 
-button:hover {
-  background-color: #0056b3;
+/* Submit Button */
+.form-button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #7b1fa2, #512da8);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.form-button:hover {
+  background: linear-gradient(to right, #512da8, #311b92);
 }

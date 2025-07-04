@@ -1,0 +1,74 @@
+/* Navbar container */
+.navbar {
+  width: 100%;
+  top:0;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  background: linear-gradient(135deg, #e1bee7, #f3e5f5);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-bottom: 1px solid #ddd;
+}
+
+/* Brand styling */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4a148c;
+  letter-spacing: 1px;
+}
+
+/* Button wrapper */
+.navbar-actions .btn {
+  margin-left: 1rem;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+}
+
+/* Login button (outline style) */
+.btn.login {
+  color: #4a148c;
+  background: transparent;
+  border: 2px solid #4a148c;
+}
+
+.btn.login:hover {
+  background: rgba(74,20,140,0.1);
+  transform: translateY(-2px);
+}
+
+/* Register button (filled style) */
+.btn.register {
+  color: #fff;
+  background: #7b1fa2;
+  border: 2px solid #7b1fa2;
+}
+
+.btn.register:hover {
+  background: #512da8;
+  transform: translateY(-2px);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-actions {
+    width: 100%;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar-actions .btn {
+    margin: 0.25rem 0;
+    width: 100%;
+    text-align: center;
+  }
+}
